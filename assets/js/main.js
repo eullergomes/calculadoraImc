@@ -32,12 +32,6 @@ function getImc (peso, altura){
     return imc.toFixed(2);
 }
 
-//cria um parágrafo
-function criaP () {
-    const p = document.createElement('p'); //cria um elemento HTML (<p>)
-    return p;
-}
-
 function getNivelImc (imc){
     const nivel = ['Abaixo do peso', 'Peso normal', 'Sobrepeso', 'Obesidade grau I', 'Obesidade grau II', 'Obesidade grau III'];
     if (imc >= 40){
@@ -59,6 +53,12 @@ function getNivelImc (imc){
         return nivel[0]
     }
 
+}
+
+//cria um parágrafo
+function criaP () {
+    const p = document.createElement('p'); //cria um elemento HTML (<p>)
+    return p;
 }
 
 function setResultado (msg, isValid){
